@@ -1,0 +1,41 @@
+{import 'menu.latte'}
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+	{block head}
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<meta name="description" content="Actividad Transferencia Diseño y Desarrollo Web, UCompensar" />
+		<meta name="author" content="Jaime Fabián Bejarano León" />
+		<title>{block title|stripHtml|trim}{/block} - Fabián Bejarano León</title>
+		<link rel="icon" type="image/x-icon" href="img/favicon.ico" />
+		<!-- Font Awesome free version -->
+		<script src="vendor/fontawesome-free-6.4.2-web/js/all.min.js"></script>
+		<!-- CSS -->
+		<link href="vendor/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet" />
+		<link href="css/style.css" rel="stylesheet" />
+	{/block}
+	</head>
+	<body id="page-top">
+		<!-- Barra de navegación -->
+		{block menu}
+			{include menuBuilder $menuItems}
+		{/block}
+
+		{block contenido /}
+
+		<!-- Pie de página -->
+		{block piepag}
+			<footer class="footer bg-black small text-center text-white-50">
+				<div class="container px-4 px-lg-5">
+					&copy; Copyright {=date('Y')} - Jaime Fabián Bejarano León
+				</div>
+			</footer>
+		{/block}
+
+		<!-- Bootstrap JS-->
+		<script src="vendor/bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+		<!-- Core theme JS-->
+		<script src="js/scripts.js"></script>
+	</body>
+</html>
