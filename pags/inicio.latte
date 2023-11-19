@@ -1,25 +1,23 @@
 {layout '../template/template.latte'}
 
 {block contenido}
+
+	<span n:block="title" style="display: none;">Inicio</span>
+
 	<!-- Encabezado -->
 	<header class="encabezado">
 		<div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
 			<div class="d-flex justify-content-center">
 				<div class="text-center">
-					<h1 class="mx-auto my-0 text-uppercase">Fabián Bejarano León</h1>
-					<h2 class="text-white-50 mx-auto mt-2 mb-5">Desarrollo y Diseño Web</h2>
+					<!-- <h1 class="mx-auto my-0 titulopag">Fabián Bejarano León</h1> -->
+					<!-- <h2 class="text-white-50 mx-auto mt-2 mb-5">Desarrollo y Diseño Web</h2> -->
+					<div class="p-5 "><img src="img/logo-invertido.png" /></div>
 					<a class="btn btn-outline-secondary" href="index.php?p={$menuItems[0]->pag}">Conozca mi<br>trayectoria</a>
-					<a class="btn btn-outline-info" href="index.php?p={$menuItems[1]->pag}">Conozca más<br>sobre mi trabajo</a>
-					<a class="btn btn-outline-success" href="index.php?p={$menuItems[2]->pag}">Donde puede<br>contactarme</a>
+					<a class="btn btn-outline-secondary" href="index.php?p={$menuItems[1]->pag}">Conozca más<br>sobre mi trabajo</a>
+					<a class="btn btn-outline-secondary" href="index.php?p={$menuItems[2]->pag}">Donde puede<br>contactarme</a>
 				</div>
 			</div>
 		</div>
 	</header>
 
-	<div class="container px-4 px-lg-5">
-		<h1 class="titulopag" n:block="title" style="display: none;">Inicio</h1>
-		<div class="col">
-
-		</div>
-	</div>
 {/block}
